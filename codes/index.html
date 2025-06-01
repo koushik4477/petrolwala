@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petrolwala</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <style>
+    
+    body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/darkpump.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+    .logo {
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navicon {
+      padding-left: 40px;
+    }
+
+    .tab {
+      overflow: hidden;
+      background-color: transparent;
+    }
+
+    .tab button {
+      font-weight: bolder;
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      background-color: transparent;
+      
+    }
+
+    .tab button:hover {
+      color: black;
+      background-color: #e3c773;
+    }
+
+    
+    
+
+    table {
+      background-color: transparent;
+    }
+
+    td {
+      background-color: transparent;
+    }
+    .logo-full{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 15px;
+    }
+    .logo-text{
+      text-decoration:solid;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: larger;
+      font-weight: bolder;
+      color: aliceblue;
+    }
+    .mainpage .tabcontent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mainpage .tabcontent .buy{
+      margin-top: 20%;
+     margin-left: 15%;
+     margin-bottom: 25%;
+    
+    }
+    .mainpage .tabcontent .sell{
+      margin-top: 20%;
+     margin-right: 15%;
+     margin-bottom: 25%;
+    }
+    .avatar {
+	width: 300px;
+	height: 300px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+  </style>
+</head>
+<body>
+  <table width="100%" border="0" style="background-color: transparent;">
+    <tr>
+      <td align="left" width="20%" class="logo-full">
+        <p class="logo-text"><b>Petrolwala</b></p>
+        <img class="logo" src="../images/logo.png" alt="logo" height="50" />
+      </td>
+      <td align="right">
+        <table border="0" style="background-color: transparent;">
+          <tr class="tab">
+            <td class="navicon" align="center" width="80">
+              <button class="tablinks" onclick="">
+                <i class="fa fa-fw fa-home"></i> Home
+              </button>
+            </td>
+            <td class="navicon" align="center" width="80">
+              <button class="tablinks" onclick="openCity(event, 'contact')">
+                <i class="fa fa-fw fa-envelope"></i> Contact
+              </button>
+            </td>
+            <td class="navicon" align="center" width="80">
+              <button class="tablinks" onclick="openCity(event, 'login')">
+                <i class="fa fa-fw fa-user"></i> Login
+              </button>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+ <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="../images/img1.jpg" alt=""></div>
+            <div class="item" style="--position: 2"><img src="../images/img2.jpg" alt=""></div>
+            <div class="item" style="--position: 3"><img src="../images/img3.jpg" alt=""></div>
+            <div class="item" style="--position: 4"><img src="../images/img4.jpg" alt=""></div>
+            <div class="item" style="--position: 5"><img src="../images/img5.jpg" alt=""></div>
+            <div class="item" style="--position: 6"><img src="../images/img6.jpg" alt=""></div>
+            <div class="item" style="--position: 7"><img src="../images/img7.jpg" alt=""></div>
+            <div class="item" style="--position: 8"><img src="../images/img8.jpg" alt=""></div>
+            <div class="item" style="--position: 9"><img src="../images/img9.jpg" alt=""></div>
+            <div class="item" style="--position: 10"><img src="../images/img10.jpg" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="PETROL WALA">
+                PETROL WALA
+            </h1>
+            
+           
+        </div>
+    </div>
+  <div class="mainpage">
+    <div id="Home" class="tabcontent">
+      <div class="buy avatar">
+       <a href="buy.html"> <img src="../images/bought.jpg" alt="buyimage" ></a>
+      </div>
+      <div class="sell avatar">
+        <a href="sell.html"><img src="../images/sell.png" alt="sellimage" ></a>
+      </div>
+    </div>
+
+    <div id="contact" class="tabcontent">
+      
+    </div>
+
+    <div id="login" class="tabcontent">
+      
+    </div>
+  </div>
+
+  <script>
+    
+  </script>
+</body>
+</html>

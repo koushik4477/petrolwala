@@ -100,13 +100,13 @@ body::before {
         align-items: center;
     }
     .mainpage .tabcontent .buy{
-      margin-top: 20%;
+      margin-top: 2%;
      margin-left: 15%;
      margin-bottom: 25%;
     
     }
     .mainpage .tabcontent .sell{
-      margin-top: 20%;
+      margin-top: 2%;
      margin-right: 15%;
      margin-bottom: 25%;
     }
@@ -121,6 +121,33 @@ body::before {
 	transform: translatey(0px);
 	animation: float 6s ease-in-out infinite;
 	img { width: 100%; height: auto; }
+}
+.content h3{
+   margin-left: 3%;
+    margin-bottom: 5%;
+    font-family: 'ICA Rubrik';
+    font-size: 16em;
+    line-height: 1em;
+    color: #25283B;
+    position: relative;
+}
+.content h3::after{
+  position: absolute;
+    inset: 0 0 0 0;
+    content: attr(data-content);
+    z-index: 2;
+    -webkit-text-stroke: 2px #d2d2d2;
+    color: transparent;
+}
+.content h3{
+   text-align: center;
+        width: 100%;
+        text-shadow: 0 10px 20px #000;
+        font-size: 12em;
+}
+.matrix{
+background-color: transparent;
+margin-left: 40%;
 }
   </style>
 </head>
@@ -175,8 +202,11 @@ body::before {
            
         </div>
     </div>
+    <div class="content"><h3 data-content="Choose One">Choose One</h3></div>
+      <div class="matrix"><img src="matrix.png" alt="choosematrix"></div>
   <div class="mainpage">
     <div id="Home" class="tabcontent">
+      
       <div class="buy avatar">
        <a href="buy.html"> <img src="bought.jpg" alt="buyimage" ></a>
       </div>
